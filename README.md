@@ -1,5 +1,5 @@
 # btl_masterdev
-Bài tập lớn: Xây dựng luồng dữ liệu và các dashboard giám sát lượng điện tiêu thụ của hộ gia đình
+Bài tập lớn: Xây dựng `luồng dữ liệu` và các `dashboard` giám sát lượng điện tiêu thụ của hộ gia đình
 
 Dữ liệu bao gồm lượng điện tiêu thụ các thiết bị điện của 6 hộ gia đình trong khoảng từ năm 2015 – 2019.
 
