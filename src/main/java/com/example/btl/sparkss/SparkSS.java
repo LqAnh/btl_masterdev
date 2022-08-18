@@ -39,7 +39,7 @@ public class SparkSS {
         Dataset<Row> df = spark
                 .readStream()
                 .format("kafka")
-                .option("kafka.bootstrap.servers", "172.17.80.26:9092")
+                .option("kafka.bootstrap.servers", "172.16.30.171:9092")
                 .option("subscribe", "anhlq36_electric")
                 .option("group.id","group1")
                 .option("startingOffsets","earliest")
@@ -74,8 +74,8 @@ public class SparkSS {
                 .writeStream()
                 .format("parquet")
                 .outputMode("append")
-                .option("checkpointLocation", "hdfs://172.17.80.21:9000/user/anhlq36/btl/checkpoint")//  hdfs://172.17.80.21:9000/user/anhlq36/btl/checkpoint
-                .option("path", "hdfs://172.17.80.21:9000/user/anhlq36/btl/output")//hdfs://172.17.80.21:9000/user/anhlq36/btl/output_parquet
+                .option("checkpointLocation", "hdfs://172.17.80.21:9000/user/anhlq36/btl/checkpoint")
+                .option("path", "hdfs://172.17.80.21:9000/user/anhlq36/btl/output")
                 .start();
         query.awaitTermination();
     }
