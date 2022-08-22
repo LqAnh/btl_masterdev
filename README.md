@@ -17,7 +17,7 @@ https://data.open-power-system-data.org/household_data/2020-04-15
 
 Kafka được chạy trên server `172.17.80.28` topic `anhlq36_electric` 
 
-Câu lệnh start Spark Thrift Server trên server `172.17.80.21` tại `queue 1`
+Câu lệnh start `Spark Thrift Server` trên server `172.17.80.21` tại `queue 1`
 
     start-thriftserver.sh --master yarn --num-executors 1  --driver-memory 512m --executor-memory 512m  --executor-cores 1 --driver-cores 1 --queue queue1  --hiveconf hive.server2.thrift.port=10015
 Câu lệnh kết nối bằng `beeline` với khi yêu cầu `user` `password` ấn `enter` 
