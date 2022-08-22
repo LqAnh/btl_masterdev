@@ -28,3 +28,7 @@ Câu lệnh kết nối bằng `beeline` với khi yêu cầu `user` `password` 
 Câu lệnh tạo `hive table` từ `hdfs` để truy vấn với `superset`
 
     create external table test (id INT, res_id INT, time TIMESTAMP, dishwasher FLOAT, ev FLOAT ,freezer FLOAT, grid_export FLOAT , grid_import FLOAT,heat_pump FLOAT ,pv FLOAT ,refrigerator FLOAT , washing_machine FLOAT) STORED AS PARQUET LOCATION 'hdfs://172.17.80.21:9000/user/anhlq36/btl/output';
+
+Trên server `172.17.80.21` (master) user `hadoop` folder `/home/hadoop/anhlq36/btl` câu lệnh spark-submit:
+
+    spark-submit --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 --class com.example.btl.sparkss.SparkSS btl-1.0-SNAPSHOT.jar
