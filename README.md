@@ -12,9 +12,10 @@ https://data.open-power-system-data.org/household_data/2020-04-15
 4)	Hive load dữ liệu từ HDFS lên tạo bảng Hive
 5)	Sử dụng superset kết nối với Hive để tạo các dashboard trực quan hoá dữ liệu
 
-<img width="528" alt="image" src="https://user-images.githubusercontent.com/72133178/184479184-791b6d29-cf0d-4fb0-bda8-9ce226af16b5.png">
+<img width="953" alt="Screen Shot 2022-08-22 at 18 09 13" src="https://user-images.githubusercontent.com/72133178/185907481-78f595f2-79fb-4667-9f85-0a27884636e2.png">
 
-Kafka được chạy trên máy local  
+
+Kafka được chạy trên server `172.17.80.28` topic `anhlq36_electric` 
 
 Câu lệnh start Spark Thrift Server trên server `172.17.80.21` tại `queue 1`
 
