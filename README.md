@@ -34,3 +34,14 @@ Câu lệnh tạo `hive table` từ `hdfs` để truy vấn với `superset`
 Trên server `172.17.80.21` (master) user `hadoop` folder `/home/hadoop/anhlq36/btl` câu lệnh spark-submit:
 
     spark-submit --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 --class com.example.btl.sparkss.SparkSS btl-1.0-SNAPSHOT.jar
+    
+    
+Superset dashboard
+
+![anhlq-36-dashboard-history-2022-08-22T01-45-41 868Z](https://user-images.githubusercontent.com/72133178/185908384-050c3d23-b7f7-452e-8bb7-b7d453907e11.jpg)
+
+
+![anhlq-36-dashboard-rt-2022-08-22T01-29-21 882Z](https://user-images.githubusercontent.com/72133178/185908447-7df961b3-f25a-487a-89f6-25c86a487895.jpg)
+
+
+
