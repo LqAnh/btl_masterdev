@@ -2,6 +2,7 @@
 Bài tập lớn: Xây dựng `luồng dữ liệu` và các `dashboard` giám sát lượng điện tiêu thụ của hộ gia đình
 
 Dữ liệu bao gồm lượng điện tiêu thụ các thiết bị điện của 6 hộ gia đình trong khoảng từ năm 2015 – 2019.
+https://data.open-power-system-data.org/household_data/2020-04-15
 
 -	Mô hình và các component sử dụng được mô tả ở hình vẽ bên dưới:
 
